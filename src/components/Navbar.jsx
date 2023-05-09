@@ -33,7 +33,7 @@ const Navbar = () => {
         className={
           mobileMenu
             ? 'flex-column fixed right-0 w-full h-full bg-white text-center py-10 px-6 pb-20'
-            : 'list-none justify-between items-center flex-nowrap mx-10 text-[2vw] gap-10 px-6 hidden sm:gap-6 sm:inline-flex lg:text-[1.5vw] lg:gap-16'
+            : 'list-none justify-between items-center flex-nowrap mx-10 text-[2vw] gap-10 px-6 sm: hidden sm:gap-6 sm:inline-flex lg:text-[1.5vw] lg:gap-16'
         }
       >
         <li
@@ -49,18 +49,18 @@ const Navbar = () => {
             className={mobileMenu ? 'w-[200px] h-[200px]' : 'hidden'}
           />
         </li>
-        <li className={mobileMenu ? 'p-2 text-lg mt-6' : 'sm:hidden'}>
-          <a href="##" className={mobileMenu ? 'shadow' : 'sm:hidden'}>
+        <li className={mobileMenu ? 'p-2 text-lg mt-6' : ''}>
+          <a href="##" className={mobileMenu ? 'shadow' : ''}>
             Home
           </a>
         </li>
-        <li className={mobileMenu ? 'p-2 text-lg' : 'sm:hidden'}>
-          <a href="##" className={mobileMenu ? 'shadow' : 'sm:hidden'}>
+        <li className={mobileMenu ? 'p-2 text-lg' : ''}>
+          <a href="##" className={mobileMenu ? 'shadow' : ''}>
             About
           </a>
         </li>
-        <li className={mobileMenu ? 'p-2 text-lg' : 'sm:hidden'}>
-          <a href="##" className={mobileMenu ? 'shadow' : 'sm:hidden'}>
+        <li className={mobileMenu ? 'p-2 text-lg' : ''}>
+          <a href="##" className={mobileMenu ? 'shadow' : ''}>
             Contacts
           </a>
         </li>
@@ -71,18 +71,18 @@ const Navbar = () => {
             className={mobileMenu ? 'hidden' : 'min-w-[150px] h-[150px]'}
           />
         </li>
-        <li className={mobileMenu ? 'p-2 text-lg' : 'sm:hidden'}>
-          <a href="##" className={mobileMenu ? 'shadow' : 'sm:hidden'}>
+        <li className={mobileMenu ? 'p-2 text-lg' : ''}>
+          <a href="##" className={mobileMenu ? 'shadow' : ''}>
             Gallery
           </a>
         </li>
-        <li className={mobileMenu ? 'p-2 text-lg' : 'sm:hidden'}>
-          <a href="##" className={mobileMenu ? 'shadow' : 'sm:hidden'}>
+        <li className={mobileMenu ? 'p-2 text-lg' : ''}>
+          <a href="##" className={mobileMenu ? 'shadow' : ''}>
             Portfolio
           </a>
         </li>
-        <li className={mobileMenu ? 'p-2 text-lg' : 'sm:hidden'}>
-          <a href="##" className={mobileMenu ? 'shadow' : 'sm:hidden'}>
+        <li className={mobileMenu ? 'p-2 text-lg' : ''}>
+          <a href="##" className={mobileMenu ? 'shadow' : ''}>
             Features
           </a>
         </li>
