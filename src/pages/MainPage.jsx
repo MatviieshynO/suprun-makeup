@@ -1,11 +1,13 @@
 //Layouts
 import MainLayout from '../layout/MainLayout'
+//Components
+import About from '../components/About'
 
 const MainPage = () => {
   return (
     <div>
       <MainLayout>
-        <p>MainPage</p>
+        <About />
       </MainLayout>
     </div>
   )
