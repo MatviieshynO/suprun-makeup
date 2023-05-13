@@ -1,12 +1,9 @@
-//Icons
-import { BsInstagram } from 'react-icons/bs'
-import { FaFacebook } from 'react-icons/fa'
-import { TfiEmail } from 'react-icons/tfi'
-import { BsFillTelephoneFill } from 'react-icons/bs'
+// Components
+import SocialMediaLinks from './SocialMediaLinks'
 
 const About = () => {
   return (
-    <div className="flex sm:mt-40 mt-20 justify-around">
+    <div className="flex-column sm:flex sm:mt-40 mt-20 justify-around">
       <div className="p-2">
         <img
           src="https://images.unsplash.com/photo-1596205521983-9c372fb3d4f1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=464&q=80"
@@ -29,20 +26,7 @@ const About = () => {
             expedita earum sequi qui necessitatibus laudantium pariatur.
           </p>
           <div className="flex justify-end sm:pt-10 sm:pr-40 pr-5">
-            <div className="flex sm:gap-2 gap-1 text-2">
-              <a href="">
-                <BsInstagram className="text-[1.4vw] hover:border" />
-              </a>
-              <a href="">
-                <FaFacebook className="text-[1.4vw] hover:border" />
-              </a>
-              <a href="">
-                <TfiEmail className="text-[1.4vw] hover:border" />
-              </a>
-              <a href="">
-                <BsFillTelephoneFill className="text-[1.4vw] hover:border" />
-              </a>
-            </div>
+            <SocialMediaLinks />
           </div>
         </div>
       </div>
