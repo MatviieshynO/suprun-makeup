@@ -1,6 +1,7 @@
 const Contacts = () => {
   return (
     <div>
+      
       <div className="flex justify-center">
         <form action="" className="border py-10 my-10 min-w-[50vw] rounded-lg">
           <h2 className="text-center text-[2vw] uppercase mb-4">
