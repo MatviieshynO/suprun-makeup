@@ -31,7 +31,7 @@ const Navbar = () => {
       <ul
         className={
           mobileMenu
-            ? 'flex fixed right-0 top-0 w-full h-[8%] bg-white text-center sm:py-10 sm:px-6 sm:pb-20 items-center justify-center content-center'
+            ? 'flex fixed right-0 top-0 w-full h-[7%] bg-white text-center sm:py-10 sm:px-6 sm:pb-20 items-center justify-center content-center'
             : 'list-none justify-between items-center flex-nowrap mx-10 text-[2vw] gap-10 px-6 hidden sm:gap-6 sm:inline-flex lg:text-[1.3vw] lg:gap-32 lg:uppercase '
         }
       >
@@ -41,12 +41,18 @@ const Navbar = () => {
           </a>
         </li>
         <li className={mobileMenu ? 'flex sm:p-2' : ''}>
-          <a href="##" className={mobileMenu ? 'text-[3.5vw] uppercase p-2' : ''}>
+          <a
+            href="##"
+            className={mobileMenu ? 'text-[3.9vw] uppercase p-[4px]' : ''}
+          >
             About
           </a>
         </li>
         <li className={mobileMenu ? 'flex sm:p-2' : ''}>
-          <a href="##" className={mobileMenu ? 'text-[3.5vw] uppercase p-2' : ''}>
+          <a
+            href="##"
+            className={mobileMenu ? 'text-[3.9vw] uppercase p-[4px]' : ''}
+          >
             Contacts
           </a>
         </li>
@@ -60,12 +66,18 @@ const Navbar = () => {
           </a>
         </li>
         <li className={mobileMenu ? 'flex sm:p-2' : ''}>
-          <a href="##" className={mobileMenu ? 'text-[3.5vw] uppercase p-2' : ''}>
+          <a
+            href="##"
+            className={mobileMenu ? 'text-[3.9vw] uppercase p-[4px]' : ''}
+          >
             Gallery
           </a>
         </li>
         <li className={mobileMenu ? 'flex sm:p-2' : ''}>
-          <a href="##" className={mobileMenu ? ' text-[3.5vw] uppercase p-2 mr-4' : ''}>
+          <a
+            href="##"
+            className={mobileMenu ? ' text-[3.9vw] uppercase p-[4px]' : ''}
+          >
             Portfolio
           </a>
         </li>
@@ -73,7 +85,7 @@ const Navbar = () => {
           <LanguageSelect />
         </li>
         <li
-          className={mobileMenu ? 'flex justify-end ' : 'sm:hidden'}
+          className={mobileMenu ? 'flex justify-end pl-6' : 'sm:hidden'}
           onClick={closeMobileMenu}
         >
           <GrClose />
