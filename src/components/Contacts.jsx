@@ -1,13 +1,14 @@
 const Contacts = () => {
   return (
-    <div>
-      
+    <div className=" flex sm:justify-around p-10 border">
+      <div className="p-4 my-[6%]">
+        <h2 className="text-[2vw] uppercase mb-10 text-center">Send me message</h2>
+        <p className=" text-[1.2vw]">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque id
+        </p>
+      </div>
       <div className="flex justify-center">
-        <form action="" className="border py-10 my-10 min-w-[50vw] rounded-lg">
-          <h2 className="text-center text-[2vw] uppercase mb-4">
-            Send me message
-          </h2>
-
+        <form action="" className="border py-4 my-4 min-w-[50vw] rounded-lg">
           <div className="flex justify-center">
             <input
               type="text"
@@ -34,7 +35,7 @@ const Contacts = () => {
           <div className="flex justify-center">
             <textarea
               placeholder="place to message"
-              rows="10"
+              rows="5"
               className="border min-w-[90%] p-2 my-2 rounded-lg"
             ></textarea>
           </div>

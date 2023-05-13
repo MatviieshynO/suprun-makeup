@@ -15,9 +15,9 @@ const Navbar = () => {
     setMobileMenu(false)
   }
   return (
-    <nav className="flex justify-center border fixed bg-white w-full top-0">
+    <nav className="flex justify-center border fixed bg-white w-full top-0 z-50">
       <div className="flex w-full items-center justify-between px-2 sm:hidden">
-        <div className="w-10"></div>
+        <div className="w-10 "></div>
         <img
           src="https://images-platform.99static.com//i5eH2WqTgM63vwiePvt5e6MvtCE=/433x0:1282x849/fit-in/590x590/projects-files/76/7612/761254/eaf890ff-4624-4509-af8c-63c1c2ca61b2.jpg"
           alt="logo"
@@ -31,8 +31,8 @@ const Navbar = () => {
       <ul
         className={
           mobileMenu
-            ? 'flex fixed right-0 top-0 w-full h-[7%] bg-white text-center sm:py-10 sm:px-6 sm:pb-20 items-center justify-center content-center'
-            : 'list-none justify-between items-center flex-nowrap mx-10 text-[2vw] gap-10 px-6 hidden sm:gap-6 sm:inline-flex lg:text-[1.3vw] lg:gap-32 lg:uppercase '
+            ? 'flex fixed right-0 w-full h-[8%] bg-white text-center sm:py-10 sm:px-6 sm:pb-20 items-center justify-center content-center duration-700'
+            : 'list-none justify-between items-center flex-nowrap mx-10 text-[2vw] gap-10 px-6 hidden sm:gap-6 sm:inline-flex lg:text-[1.3vw] lg:gap-32 lg:uppercase'
         }
       >
         <li className={mobileMenu ? 'hidden' : ''}>
