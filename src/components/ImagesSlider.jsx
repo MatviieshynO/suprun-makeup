@@ -1,19 +1,29 @@
 import { useState } from 'react'
+import {
+  TbSquareRoundedArrowLeftFilled,
+  TbSquareRoundedArrowRightFilled,
+} from 'react-icons/tb'
 
 const ImagesSlider = () => {
-  const [offSet, setOffSet] = useState(-600)
+  const [offSet, setOffSet] = useState(-759)
   const handleArrowLeftClick = () => {
     setOffSet((currentOffSet) => {
-      const newOffSet = currentOffSet - 414
-      console.log(newOffSet)
+      let newOffSet = currentOffSet - 334
+      if (offSet < -1000) {
+        newOffSet = -71
+        return newOffSet
+      }
       return newOffSet
+      // return Math.max(newOffSet, -670)
     })
   }
   const handleArrowRigthClick = () => {
     setOffSet((currentOffSet) => {
-      const newOffSet = currentOffSet + 414
-
-      console.log(newOffSet)
+      let newOffSet = currentOffSet + 334
+      if (offSet > -80) {
+        newOffSet = -1080
+        return newOffSet
+      }
       return newOffSet
     })
   }
@@ -23,7 +33,7 @@ const ImagesSlider = () => {
         className="p-4 z-30 text-black text-5xl"
         onClick={handleArrowLeftClick}
       >
-        {'<'}
+        <TbSquareRoundedArrowLeftFilled className="text-white" />
       </button>
       <div className="h-[500px] w-full">
         <div
@@ -31,33 +41,33 @@ const ImagesSlider = () => {
           style={{ transform: `translateX(${offSet}px)` }}
         >
           <img
-            className="min-w-full max-w-full h-full p-2 rounded-2xl"
-            src="https://cdn.pixabay.com/photo/2019/12/15/08/14/body-painting-4696539_960_720.jpg"
+            className="min-w-full max-w-full h-full p-2 shadow-2xl shadow-black rounded-2xl mx-2"
+            src="images/slider-1.png"
             alt=""
           />
           <img
-            className="min-w-full max-w-full h-full p-2 rounded-2xl"
-            src="https://images.unsplash.com/photo-1631248622332-3c49488a8d2f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=464&q=80"
+            className="min-w-full max-w-full h-full p-2 rounded-2xl shadow-2xl shadow-black mx-2"
+            src="images/slider-2.png"
             alt=""
           />
           <img
-            className="min-w-full max-w-full h-full p-2 rounded-2xl"
-            src="https://images.unsplash.com/photo-1606158436222-1896b18c5d25?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
+            className="min-w-full max-w-full h-full p-2 rounded-2xl shadow-2xl shadow-black mx-2"
+            src="images/slider-3.png"
             alt=""
           />
           <img
-            className="min-w-full max-w-full h-full p-2 rounded-2xl"
-            src="https://images.unsplash.com/photo-1628619546634-e356cb411b5f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=464&q=80"
+            className="min-w-full max-w-full h-full p-2 rounded-2xl shadow-2xl shadow-black mx-2"
+            src="images/slider-4.png"
             alt=""
           />
           <img
-            className="min-w-full max-w-full h-full p-2 rounded-2xl"
-            src="https://images.unsplash.com/photo-1605813807548-0f9bd3cf043a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=465&q=80"
+            className="min-w-full max-w-full h-full p-2 rounded-2xl shadow-2xl shadow-black mx-2"
+            src="images/slider-5.png"
             alt=""
           />
           <img
-            className="min-w-full max-w-full h-full p-2 rounded-2xl"
-            src="https://images.unsplash.com/photo-1601599009979-f85c21cbd703?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=436&q=80"
+            className="min-w-full max-w-full h-full p-2 rounded-2xl shadow-2xl shadow-black mx-2"
+            src="images/slider-6.png"
             alt=""
           />
         </div>
@@ -66,7 +76,7 @@ const ImagesSlider = () => {
         className="z-20 text-black text-5xl"
         onClick={handleArrowRigthClick}
       >
-        {'>'}
+        <TbSquareRoundedArrowRightFilled className="text-white" />
       </button>
     </div>
   )

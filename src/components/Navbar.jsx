@@ -1,11 +1,20 @@
 import { useState } from 'react'
+
 //Components
 import LanguageSelect from './LanguageSelect'
 //Icons
 import { GiHamburgerMenu } from 'react-icons/gi'
 import { GrClose } from 'react-icons/gr'
+import { NavLink } from 'react-router-dom'
 
-const Navbar = () => {
+const Navbar = ({
+  scrollToSection,
+  toHome,
+  toAbout,
+  toContent,
+  toImageSlider,
+  toContacts,
+}) => {
   const [mobileMenu, setMobileMenu] = useState(false)
 
   function openMobileMenu() {
@@ -15,7 +24,7 @@ const Navbar = () => {
     setMobileMenu(false)
   }
   return (
-    <nav className="flex justify-center border fixed bg-white w-full top-0 z-50">
+    <nav className="flex justify-center p-6 fixed bg-gradient-to-r from-slate-200 via-slate-500 to-slate-200 w-full top-0 z-50 shadow-xl">
       <div className="flex w-full items-center justify-between px-2 sm:hidden">
         <div className="w-10 "></div>
         <img
@@ -36,50 +45,58 @@ const Navbar = () => {
         }
       >
         <li className={mobileMenu ? 'hidden' : ''}>
-          <a href="##" className={mobileMenu ? '' : ''}>
-            Home
-          </a>
+          <button
+            className={mobileMenu ? '' : ''}
+            onClick={() => scrollToSection(toHome)}
+          >
+            HOME
+          </button>
         </li>
         <li className={mobileMenu ? 'flex sm:p-2' : ''}>
-          <a
-            href="##"
+          <button
             className={mobileMenu ? 'text-[3.9vw] uppercase p-[4px]' : ''}
+            onClick={() => scrollToSection(toAbout)}
           >
-            About
-          </a>
+            ABOUT
+          </button>
         </li>
         <li className={mobileMenu ? 'flex sm:p-2' : ''}>
-          <a
-            href="##"
+          <button
             className={mobileMenu ? 'text-[3.9vw] uppercase p-[4px]' : ''}
+            onClick={() => scrollToSection(toContacts)}
           >
-            Contacts
-          </a>
+            CONTACTS
+          </button>
         </li>
         <li>
-          <a href="##">
+          <NavLink to="/" className="absolute top-0 left-[680px]">
             <img
               src="https://images-platform.99static.com//i5eH2WqTgM63vwiePvt5e6MvtCE=/433x0:1282x849/fit-in/590x590/projects-files/76/7612/761254/eaf890ff-4624-4509-af8c-63c1c2ca61b2.jpg"
               alt="logo"
-              className={mobileMenu ? 'hidden' : 'min-w-[125px] h-[125px]'}
+              onClick={() => scrollToSection(toHome)}
+              className={
+                mobileMenu
+                  ? 'hidden'
+                  : 'min-w-[150px] h-[150px] rounded-full shadow-lg shadow-black'
+              }
             />
-          </a>
+          </NavLink>
         </li>
         <li className={mobileMenu ? 'flex sm:p-2' : ''}>
-          <a
-            href="##"
+          <button
             className={mobileMenu ? 'text-[3.9vw] uppercase p-[4px]' : ''}
+            onClick={() => scrollToSection(toContent)}
           >
-            Gallery
-          </a>
+            CONTENT
+          </button>
         </li>
         <li className={mobileMenu ? 'flex sm:p-2' : ''}>
-          <a
-            href="##"
+          <button
             className={mobileMenu ? ' text-[3.9vw] uppercase p-[4px]' : ''}
+            onClick={() => scrollToSection(toImageSlider)}
           >
-            Portfolio
-          </a>
+            GALLERY
+          </button>
         </li>
         <li className={mobileMenu ? 'hidden' : ''}>
           <LanguageSelect />

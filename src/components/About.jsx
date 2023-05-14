@@ -3,12 +3,12 @@ import SocialMediaLinks from './SocialMediaLinks'
 
 const About = () => {
   return (
-    <div className="flex-column sm:flex sm:mt-40 mt-20 justify-around">
-      <div className="p-2">
+    <div className="flex-column sm:flex sm:mt-[90px] mt-20 justify-around pt-10">
+      <div className="p-2 shadow-2xl shadow-black rounded-lg">
         <img
           className="rounded-lg"
-          src="https://images.unsplash.com/photo-1596205521983-9c372fb3d4f1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=464&q=80"
-          alt=""
+          src="images/about-image.png"
+          alt="aboutImage"
         />
       </div>
       <div className="flex-column p-2">
