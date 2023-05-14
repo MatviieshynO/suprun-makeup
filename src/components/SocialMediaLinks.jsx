@@ -8,16 +8,16 @@ const SocialMediaLinks = () => {
   return (
     <div className="flex sm:gap-2 gap-1 text-2">
       <a href="/">
-        <BsInstagram className="text-[1.4vw] hover:border-b" />
+        <BsInstagram className="text-[1.4vw] hover:border-b hover:text-pink-700" />
       </a>
       <a href="/">
-        <FaFacebook className="text-[1.4vw] hover:border-b" />
+        <FaFacebook className="text-[1.4vw] hover:border-b hover:text-pink-700" />
       </a>
       <a href="/">
-        <TfiEmail className="text-[1.4vw] hover:border-b" />
+        <TfiEmail className="text-[1.4vw] hover:border-b hover:text-pink-700" />
       </a>
       <a href="/">
-        <BsFillTelephoneFill className="text-[1.4vw] hover:border-b" />
+        <BsFillTelephoneFill className="text-[1.4vw] hover:border-b hover:text-pink-700" />
       </a>
     </div>
   )

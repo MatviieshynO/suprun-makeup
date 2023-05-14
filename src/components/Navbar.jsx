@@ -24,7 +24,7 @@ const Navbar = ({
     setMobileMenu(false)
   }
   return (
-    <nav className="flex justify-center p-6 fixed bg-gradient-to-r from-slate-200 via-slate-500 to-slate-200 w-full top-0 z-50 shadow-xl">
+    <nav className="flex justify-center p-6 fixed bg-gradient-to-r from-slate-200 via-slate-500 to-slate-200 w-full top-0 z-50 shadow shadow-pink-700 hover:gradient-to-r hover:from-slate-400 hover:via-slate-100 hover:to-slate-400 ">
       <div className="flex w-full items-center justify-between px-2 sm:hidden">
         <div className="w-10 "></div>
         <img
@@ -46,7 +46,11 @@ const Navbar = ({
       >
         <li className={mobileMenu ? 'hidden' : ''}>
           <button
-            className={mobileMenu ? '' : ''}
+            className={
+              mobileMenu
+                ? ''
+                : 'hover:border-b-[2px] hover:border-pink-700 hover:text-pink-800 gsap-07'
+            }
             onClick={() => scrollToSection(toHome)}
           >
             HOME
@@ -54,7 +58,11 @@ const Navbar = ({
         </li>
         <li className={mobileMenu ? 'flex sm:p-2' : ''}>
           <button
-            className={mobileMenu ? 'text-[3.9vw] uppercase p-[4px]' : ''}
+            className={
+              mobileMenu
+                ? 'text-[3.9vw] uppercase p-[4px]'
+                : 'hover:border-b-[2px] hover:border-pink-700 hover:text-pink-800 gsap-07'
+            }
             onClick={() => scrollToSection(toAbout)}
           >
             ABOUT
@@ -62,7 +70,11 @@ const Navbar = ({
         </li>
         <li className={mobileMenu ? 'flex sm:p-2' : ''}>
           <button
-            className={mobileMenu ? 'text-[3.9vw] uppercase p-[4px]' : ''}
+            className={
+              mobileMenu
+                ? 'text-[3.9vw] uppercase p-[4px]'
+                : 'hover:border-b-[2px] hover:border-pink-700 hover:text-pink-800 gsap-07'
+            }
             onClick={() => scrollToSection(toContacts)}
           >
             CONTACTS
@@ -77,14 +89,18 @@ const Navbar = ({
               className={
                 mobileMenu
                   ? 'hidden'
-                  : 'min-w-[150px] h-[150px] rounded-full shadow-lg shadow-black'
+                  : 'min-w-[150px] h-[150px] rounded-full shadow-lg shadow-black hover:shadow-pink-700 hover:shadow-sm gsap-08'
               }
             />
           </NavLink>
         </li>
         <li className={mobileMenu ? 'flex sm:p-2' : ''}>
           <button
-            className={mobileMenu ? 'text-[3.9vw] uppercase p-[4px]' : ''}
+            className={
+              mobileMenu
+                ? 'text-[3.9vw] uppercase p-[4px]'
+                : 'hover:border-b-[2px] hover:border-pink-700 hover:text-pink-800 gsap-07'
+            }
             onClick={() => scrollToSection(toContent)}
           >
             CONTENT
@@ -92,13 +108,17 @@ const Navbar = ({
         </li>
         <li className={mobileMenu ? 'flex sm:p-2' : ''}>
           <button
-            className={mobileMenu ? ' text-[3.9vw] uppercase p-[4px]' : ''}
+            className={
+              mobileMenu
+                ? ' text-[3.9vw] uppercase p-[4px]'
+                : 'hover:border-b-[2px] hover:border-pink-700 hover:text-pink-800 gsap-07'
+            }
             onClick={() => scrollToSection(toImageSlider)}
           >
             GALLERY
           </button>
         </li>
-        <li className={mobileMenu ? 'hidden' : ''}>
+        <li className={mobileMenu ? 'hidden' : 'gsap-08'}>
           <LanguageSelect />
         </li>
         <li
