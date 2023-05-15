@@ -16,7 +16,7 @@ const SocialMediaLinks = () => {
       <a href="/">
         <TfiEmail className="text-[1.4vw] hover:border-b hover:text-pink-700" />
       </a>
-      <a href="/">
+      <a href="wtai://wp/mc:661737404">
         <BsFillTelephoneFill className="text-[1.4vw] hover:border-b hover:text-pink-700" />
       </a>
     </div>

@@ -1,11 +1,11 @@
 const Contacts = () => {
   return (
-    <div className=" flex sm:justify-around p-10 contacts">
+    <div className=" flex-column sm:justify-around p-10 contacts">
       <div className="p-4 my-[6%]">
         <h2 className="text-[2vw] uppercase mb-10 text-center text-pink-700">
           Send me message
         </h2>
-        <p className=" text-[1.2vw]">
+        <p className=" text-[1.2vw] text-center">
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque id
         </p>
       </div>
@@ -18,7 +18,7 @@ const Contacts = () => {
             <input
               type="text"
               placeholder="Enter your name"
-              className="flex min-w-[90%] border p-2 my-2 rounded-lg"
+              className="flex min-w-[90%] border p-2 my-2 rounded-lg bg-zinc-200"
             />
           </div>
 
@@ -26,7 +26,7 @@ const Contacts = () => {
             <input
               type="email"
               placeholder="Enter e-mail"
-              className="flex min-w-[90%] border p-2 my-2 rounded-lg"
+              className="flex min-w-[90%] border p-2 my-2 rounded-lg bg-zinc-200"
             />
           </div>
 
@@ -34,14 +34,14 @@ const Contacts = () => {
             <input
               type="text"
               placeholder="Your phone number"
-              className="flex min-w-[90%] border p-2 my-2 rounded-lg"
+              className="flex min-w-[90%] border p-2 my-2 rounded-lg bg-zinc-200"
             />
           </div>
           <div className="flex justify-center">
             <textarea
               placeholder="Place to message"
               rows="5"
-              className="border min-w-[90%] p-2 my-2 rounded-lg"
+              className="border min-w-[90%] p-2 my-2 rounded-lg bg-zinc-200"
             ></textarea>
           </div>
 

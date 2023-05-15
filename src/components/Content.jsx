@@ -9,7 +9,7 @@ const Content = () => {
     gsap.to('.image-content', {
       scrollTrigger: {
         trigger: '.image-content',
-        markers: true,
+        markers: false,
         start: 'top bottom',
         scrub: true,
       },
@@ -19,7 +19,7 @@ const Content = () => {
     gsap.to('.image-content-2', {
       scrollTrigger: {
         trigger: '.content',
-        markers: true,
+        markers: false,
         start: 'center bottom',
         scrub: true,
       },

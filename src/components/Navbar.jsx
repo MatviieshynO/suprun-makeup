@@ -24,7 +24,7 @@ const Navbar = ({
     setMobileMenu(false)
   }
   return (
-    <nav className="flex justify-center p-6 fixed bg-gradient-to-r from-slate-200 via-slate-500 to-slate-200 w-full top-0 z-50 shadow shadow-pink-700 hover:gradient-to-r hover:from-slate-400 hover:via-slate-100 hover:to-slate-400 ">
+    <nav className="flex justify-center p-10 fixed w-full top-0 z-50 shadow shadow-pink-700 bg-[url('https://img.freepik.com/premium-photo/concrete-wall-background_464463-1305.jpg?w=2000')] bg-norepeat bg-cover bg-center">
       <div className="flex w-full items-center justify-between px-2 sm:hidden">
         <div className="w-10 "></div>
         <img
@@ -40,7 +40,7 @@ const Navbar = ({
       <ul
         className={
           mobileMenu
-            ? 'flex fixed right-0 w-full h-[8%] bg-white text-center sm:py-10 sm:px-6 sm:pb-20 items-center justify-center content-center duration-700'
+            ? 'flex fixed right-0 w-full h-[8%] bg-white text-center sm:py-10 sm:px-6 sm:pb-20 items-center justify-center content-center'
             : 'list-none justify-between items-center flex-nowrap mx-10 text-[2vw] gap-10 px-6 hidden sm:gap-6 sm:inline-flex lg:text-[1.3vw] lg:gap-32 lg:uppercase'
         }
       >
