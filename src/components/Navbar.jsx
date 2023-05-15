@@ -24,24 +24,24 @@ const Navbar = ({
     setMobileMenu(false)
   }
   return (
-    <nav className="flex justify-center p-10 fixed w-full top-0 z-50 shadow shadow-pink-700 bg-[url('https://img.freepik.com/premium-photo/concrete-wall-background_464463-1305.jpg?w=2000')] bg-norepeat bg-cover bg-center">
+    <nav className="flex xl:absolute justify-center fixed w-full top-0 z-50 shadow shadow-pink-700 bg-[url('https://img.freepik.com/premium-photo/concrete-wall-background_464463-1305.jpg?w=2000')] bg-norepeat bg-cover bg-center">
       <div className="flex w-full items-center justify-between px-2 sm:hidden">
         <div className="w-10 "></div>
         <img
           src="https://images-platform.99static.com//i5eH2WqTgM63vwiePvt5e6MvtCE=/433x0:1282x849/fit-in/590x590/projects-files/76/7612/761254/eaf890ff-4624-4509-af8c-63c1c2ca61b2.jpg"
           alt="logo"
-          className="min-w-[55px] h-[55px]"
+          className="min-w-[100px] h-[100px] rounded-full"
         />
         <GiHamburgerMenu
-          className={mobileMenu ? 'hidden' : 'w-12'}
+          className={mobileMenu ? 'hidden' : 'w-14 h-6'}
           onClick={openMobileMenu}
         />
       </div>
       <ul
         className={
           mobileMenu
-            ? 'flex fixed right-0 w-full h-[8%] bg-white text-center sm:py-10 sm:px-6 sm:pb-20 items-center justify-center content-center'
-            : 'list-none justify-between items-center flex-nowrap mx-10 text-[2vw] gap-10 px-6 hidden sm:gap-6 sm:inline-flex lg:text-[1.3vw] lg:gap-32 lg:uppercase'
+            ? 'flex fixed right-0 w-full h-[20%] gap-2 bg-[url("https://img.freepik.com/premium-photo/concrete-wall-background_464463-1305.jpg?w=2000")] bg-norepeat bg-cover bg-center text-center sm:py-10 sm:px-6 sm:pb-20 items-center justify-center content-center'
+            : 'list-none justify-between items-center md:gap-12 lg:gap-20 flex-nowrap mx-10 text-[2vw] gap-10 px-6 hidden sm:gap-8 sm:inline-flex lg:text-[1.6vw] lg:uppercase'
         }
       >
         <li className={mobileMenu ? 'hidden' : ''}>
@@ -81,7 +81,10 @@ const Navbar = ({
           </button>
         </li>
         <li>
-          <NavLink to="/" className="absolute top-0 left-[680px]">
+          <NavLink
+            to="/"
+            className="top-0 lg:left-[50%] xl:left-[45%] md:left-[680px]"
+          >
             <img
               src="https://images-platform.99static.com//i5eH2WqTgM63vwiePvt5e6MvtCE=/433x0:1282x849/fit-in/590x590/projects-files/76/7612/761254/eaf890ff-4624-4509-af8c-63c1c2ca61b2.jpg"
               alt="logo"
@@ -89,7 +92,7 @@ const Navbar = ({
               className={
                 mobileMenu
                   ? 'hidden'
-                  : 'min-w-[150px] h-[150px] rounded-full shadow-lg shadow-black hover:shadow-pink-700 hover:shadow-sm gsap-08'
+                  : 'lg:min-w-[150px] lg:h-[150px] md:min-w-[100px] md:h-[100px] sm:min-w-[100px] sm:h-[100px] rounded-full shadow-lg shadow-black hover:shadow-pink-700 hover:shadow-sm gsap-08'
               }
             />
           </NavLink>
@@ -121,11 +124,8 @@ const Navbar = ({
         <li className={mobileMenu ? 'hidden' : 'gsap-08'}>
           <LanguageSelect />
         </li>
-        <li
-          className={mobileMenu ? 'flex justify-end pl-6' : 'sm:hidden'}
-          onClick={closeMobileMenu}
-        >
-          <GrClose />
+        <li className={mobileMenu ? '' : 'sm:hidden'} onClick={closeMobileMenu}>
+          <GrClose className="w-6 h-6" />
         </li>
       </ul>
     </nav>
