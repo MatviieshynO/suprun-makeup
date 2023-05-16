@@ -1,6 +1,6 @@
 const Contacts = () => {
   return (
-    <div className=" flex-column sm:justify-around sm:p-10 contacts">
+    <div className=" flex-column sm:justify-around sm:p-10 contacts mb-4">
       <div className="sm:p-4 sm:my-[6%]">
         <h2 className="sm:text-[2vw] text-[8vw] uppercase sm:mb-10 text-center text-pink-700 py-4">
           Send me message
