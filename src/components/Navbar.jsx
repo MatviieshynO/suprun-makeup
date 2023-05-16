@@ -24,9 +24,9 @@ const Navbar = ({
     setMobileMenu(false)
   }
   return (
-    <nav className="flex justify-center  md:p-6 lg:p-6 fixed w-full top-0 z-20 shadow shadow-pink-700 bg-[url('https://img.freepik.com/premium-photo/concrete-wall-background_464463-1305.jpg?w=2000')] bg-norepeat bg-cover bg-center">
+    <nav className="flex justify-center md:p-6 lg:p-6 fixed w-full top-0 z-20 shadow shadow-pink-700 bg-[url('https://img.freepik.com/premium-photo/concrete-wall-background_464463-1305.jpg?w=2000')] bg-norepeat bg-cover bg-center">
       <div className="flex w-full items-center justify-between px-2 sm:hidden">
-        <div className="w-10 ">
+        <div className="">
           <LanguageSelect />
         </div>
         <img
@@ -42,8 +42,8 @@ const Navbar = ({
       <ul
         className={
           mobileMenu
-            ? 'flex fixed right-0 w-full h-[20%] gap-2 bg-[url("https://img.freepik.com/premium-photo/concrete-wall-background_464463-1305.jpg?w=2000")] bg-norepeat bg-cover bg-center text-center py-10 px-6 sm:pb-20 items-center justify-center content-center'
-            : 'xl:gap-32 list-none justify-between items-center md:gap-16 flex-nowrap mx-10 text-[2vw] gap-10 px-6 hidden sm:gap-8 sm:inline-flex lg:text-[1.6vw] lg:gap-24 lg:uppercase'
+            ? 'flex fixed right-0 w-full h-[100px] gap-2 bg-[url("https://img.freepik.com/premium-photo/concrete-wall-background_464463-1305.jpg?w=2000")] bg-norepeat bg-cover bg-center text-center py-10 px-6 sm:pb-20 items-center justify-center content-center shadow shadow-pink-700'
+            : 'xl:gap-32 list-none justify-between items-center md:gap-16 flex-nowrap mx-10 text-[2vw] gap-10 px-6 hidden sm:gap-8 sm:inline-flex lg:text-[1.6vw] lg:gap-24 lg:uppercase '
         }
       >
         <li className={mobileMenu ? 'hidden' : ''}>

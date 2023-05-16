@@ -8,11 +8,11 @@ const About = () => {
     gsap.fromTo(
       '.gsap-01',
       {
-        x: -600,
+        
         opacity: 0,
       },
       {
-        x: 0,
+        
         opacity: 1,
         duration: 1,
       }
@@ -20,11 +20,11 @@ const About = () => {
     gsap.fromTo(
       '.gsap-02',
       {
-        x: 600,
+        
         opacity: 0,
       },
       {
-        x: 0,
+        
         opacity: 1,
         duration: 1,
       }
@@ -32,12 +32,12 @@ const About = () => {
     gsap.fromTo(
       '.gsap-03',
       {
-        x: 600,
+        
         opacity: 0,
       },
       {
         delay: 1,
-        x: 0,
+        
         opacity: 1,
         duration: 0.5,
       }
@@ -45,12 +45,12 @@ const About = () => {
     gsap.fromTo(
       '.gsap-04',
       {
-        x: 600,
+        
         opacity: 0,
       },
       {
         delay: 1.5,
-        x: 0,
+        
         opacity: 1,
         duration: 0.5,
       }
@@ -58,12 +58,12 @@ const About = () => {
     gsap.fromTo(
       '.gsap-05',
       {
-        x: 600,
+       
         opacity: 0,
       },
       {
         delay: 2,
-        x: 0,
+        
         opacity: 1,
         duration: 0.5,
       }
@@ -71,12 +71,12 @@ const About = () => {
     gsap.fromTo(
       '.gsap-06',
       {
-        x: 600,
+        
         opacity: 0,
       },
       {
         delay: 2.5,
-        x: 0,
+        
         opacity: 1,
         duration: 0.5,
       }
