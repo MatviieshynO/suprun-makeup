@@ -24,7 +24,7 @@ const MainPage = () => {
     })
   }
   return (
-    <div className="max-w-[1536px] bg-[url('https://img.freepik.com/premium-photo/concrete-wall-background_464463-1305.jpg?w=2000')] bg-norepeat bg-contain">
+    <div className="max-w-[1536px] bg-[url('https://img.freepik.com/premium-photo/concrete-wall-background_464463-1305.jpg?w=2000')] bg-norepeat bg-center sm:bg-contain">
       <MainLayout>
         <div ref={toHome}>
           <Navbar
