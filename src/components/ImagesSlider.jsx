@@ -28,16 +28,16 @@ const ImagesSlider = () => {
     })
   }
   return (
-    <div className="h-full w-full flex items-center z-10 overflow-hidden py-6">
+    <div className="h-full w-full flex items-center z-10 overflow-hidden py-6 xl:mt-10">
       <button
-        className="ml-2 z-10 text-black sm:text-5xl text-3xl"
+        className="ml-2 z-10 text-black sm:text-4xl text-3xl"
         onClick={handleArrowLeftClick}
       >
         <TbSquareRoundedArrowLeftFilled className="text-white" />
       </button>
-      <div className=" xl:h-[500px] w-full">
+      <div className=" xl:h-[500px] w-full sm:w-[90%]">
         <div
-          className="xl:h-full xl:w-[30%] w-[78%] h-full flex duration-1000"
+          className="xl:h-full xl:w-[30%] w-[78%] sm:w-[44%] lg:w-[33%] h-full flex duration-1000"
           style={{ transform: `translateX(${offSet}px)` }}
         >
           <img
@@ -73,7 +73,7 @@ const ImagesSlider = () => {
         </div>
       </div>
       <button
-        className="mr-2 z-10 text-black sm:text-5xl text-3xl"
+        className="mr-2 z-10 text-black sm:text-4xl text-3xl"
         onClick={handleArrowRigthClick}
       >
         <TbSquareRoundedArrowRightFilled className="text-white" />

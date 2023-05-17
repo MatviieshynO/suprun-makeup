@@ -24,7 +24,7 @@ const Navbar = ({
     setMobileMenu(false)
   }
   return (
-    <nav className="flex justify-center md:p-6 lg:p-6 fixed w-full top-0 z-20 shadow shadow-pink-700 bg-[url('https://img.freepik.com/premium-photo/concrete-wall-background_464463-1305.jpg?w=2000')] bg-norepeat bg-cover bg-center">
+    <nav className="flex justify-center md:p-6 lg:p-10 fixed w-full top-0 z-20 shadow shadow-pink-700 bg-[url('https://img.freepik.com/premium-photo/concrete-wall-background_464463-1305.jpg?w=2000')] bg-norepeat bg-cover bg-center">
       <div className="flex w-full items-center justify-between px-2 sm:hidden">
         <div className="">
           <LanguageSelect />
@@ -91,7 +91,7 @@ const Navbar = ({
               className={
                 mobileMenu
                   ? 'hidden'
-                  : 'md:absolute right-[45%] top-0 lg:min-w-[150px] z-30 lg:h-[150px] md:min-w-[100px] md:h-[100px] sm:min-w-[85px] sm:h-[85px] rounded-full shadow-lg shadow-black hover:shadow-pink-700 hover:shadow-sm gsap-08 z'
+                  : 'md:absolute right-[45%] top-0 lg:min-w-[150px] z-30 lg:h-[150px] md:min-w-[100px] md:h-[100px] sm:min-w-[100px] sm:h-[100px] rounded-full shadow-lg shadow-black hover:shadow-pink-700 hover:shadow-sm gsap-08 z'
               }
             />
           </NavLink>
