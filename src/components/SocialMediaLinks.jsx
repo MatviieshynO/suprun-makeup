@@ -13,7 +13,10 @@ const SocialMediaLinks = () => {
       >
         <BsInstagram className="sm:text-[1.4vw] hover:border-b hover:text-pink-700" />
       </a>
-      <a href="/">
+      <a
+        href="https://www.facebook.com/profile.php?id=100014398067428"
+        target="blank"
+      >
         <FaFacebook className="sm:text-[1.4vw] hover:border-b hover:text-pink-700" />
       </a>
       <a href="mailto:glikeria.21@gmail.com">
