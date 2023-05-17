@@ -130,9 +130,9 @@ const About = () => {
           </div>
         </div>
       </div>
-      <div className="p-2 shadow-2xl shadow-black rounded-lg gsap-01">
+      <div className="flex p-2 shadow-2xl shadow-black rounded-lg gsap-01 justify-center w-full">
         <img
-          className="rounded-lg"
+          className="w-[95%] rounded-lg"
           src="images/about-image.png"
           alt="aboutImage"
         />

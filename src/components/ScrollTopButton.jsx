@@ -20,7 +20,7 @@ const ScrollTopButton = () => {
     })
   }
   return (
-    <div className="fixed bottom-[-20px] right-[41%] lg:bottom-14 lg:right-2 sm:text-6xl text-5xl z-100">
+    <div className="fixed bottom-[-30px] right-[41%] lg:bottom-14 lg:right-2 sm:text-6xl text-6xl z-50">
       {showScrollButton && (
         <BsFillArrowUpCircleFill
           className="cursor-pointer bg-incherit text-pink-700 hover:text-pink-600"
