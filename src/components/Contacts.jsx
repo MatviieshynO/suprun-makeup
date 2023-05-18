@@ -17,22 +17,22 @@ const Contacts = () => {
       })
       .then(function (response) {
         if (!yourName) {
-          return alert('Empty yourName ')
+          return alert('Error, please enter correct your name ')
         } else if (!yourEmail) {
-          return alert('Empty yourEmail')
+          return alert('Error, please enter correct your E-mail')
         } else if (!yourTelephoneNumber) {
-          return alert('Empty yourTelephoneNumber')
+          return alert('Error, please enter correct telephone number')
         } else if (!bodyMessage) {
-          return alert('Empty bodyMessage')
+          return alert('Error write correctly your text message')
         }
-        return alert('Complete sending message')
+        return alert('Sending completed')
       })
       .catch(function (error) {
-        alert('error sending message')
+        alert('Error sending message')
       })
     setYourName('')
     setYourEmail('')
-    setYourTelephoneNumber('')
+    setYourTelephoneNumber(null)
     setBodyMessage('')
   }
   return (
@@ -41,7 +41,7 @@ const Contacts = () => {
         <h2 className="sm:text-[3vw] xl:text-[2vw] text-[8vw] uppercase text-center text-pink-700 py-4">
           Send me message
         </h2>
-        <p className=" sm:text-[2vw] xl:text-[1.3vw] text-center py-4">
+        <p className=" sm:text-[2vw] xl:text-[1.3vw] text-center py-4 pb-6">
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque id
         </p>
       </div>
